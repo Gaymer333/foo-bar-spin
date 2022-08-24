@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+html, body {
+  height: 100%;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root {
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #b5b5ff;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.arrow {
+  position: absolute;
+  width: 80px;
+  z-index: 10;
+  transform: rotate(90deg);
+  margin-left: -89px;
+  margin-top: 142px;
 }
 
-@keyframes App-logo-spin {
+@media (prefers-reduced-motion: no-preference) {
+  .passive-spin1 {
+    animation: passive-spin1 10s cubic-bezier(0,.70,.70,1) forwards;
+  }
+  .passive-spin2 {
+    animation: passive-spin2 10s cubic-bezier(0,.70,.70,1) forwards;
+  }
+  .passive-spin3 {
+    animation: passive-spin3 10s cubic-bezier(0,.70,.70,1) forwards;
+  }
+  .passive-spin4 {
+    animation: passive-spin4 10s cubic-bezier(0,.70,.70,1) forwards;
+  }
+  .passive-spin5 {
+    animation: passive-spin5 10s cubic-bezier(0,.70,.70,1) forwards;
+  }
+}
+
+@keyframes passive-spin1 {
   from {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(800deg);
+  }
+}
+
+@keyframes passive-spin2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(980deg);
+  }
+}
+
+@keyframes passive-spin3 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(730deg);
+  }
+}
+
+@keyframes passive-spin4 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1400deg);
+  }
+}
+
+@keyframes passive-spin5 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1080deg);
   }
 }
