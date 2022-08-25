@@ -26,18 +26,23 @@ html, body {
 @media (prefers-reduced-motion: no-preference) {
   .passive-spin1 {
     animation: passive-spin1 10s cubic-bezier(0,.70,.70,1) forwards;
+    animation-delay: .7s;
   }
   .passive-spin2 {
     animation: passive-spin2 10s cubic-bezier(0,.70,.70,1) forwards;
+    animation-delay: .7s;
   }
   .passive-spin3 {
     animation: passive-spin3 10s cubic-bezier(0,.70,.70,1) forwards;
+    animation-delay: .7s;
   }
   .passive-spin4 {
     animation: passive-spin4 10s cubic-bezier(0,.70,.70,1) forwards;
+    animation-delay: .7s;
   }
   .passive-spin5 {
     animation: passive-spin5 10s cubic-bezier(0,.70,.70,1) forwards;
+    animation-delay: .7s;
   }
 }
 
@@ -82,6 +87,6 @@ html, body {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(1080deg);
+    transform: rotate(1070deg);
   }
 }
